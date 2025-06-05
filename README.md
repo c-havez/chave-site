@@ -1,2 +1,2 @@
 # chave-site
-personal/testing website
+Personal website for experimenting with web dev.
