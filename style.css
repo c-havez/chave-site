@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  font-family: "ＭＳ ゴシック", sans-serif;
+  background-color: rgb(155, 155, 155);
+}
+
+h1, h2, h3, h4, p {
+  margin: 0.5em;
+}
+
+h3 {
+  color: rgb(255, 196, 0);
+}
+
+h4 {
+  margin: 0;
+}
+
+h1, h4, p {
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: clamp(386px, 100vw, 768px);
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: #996262; */
+  
+  /* background-image: url("images/design-space-paper-textured-background.jpg") */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+nav {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  background-color: #7c7c7c;
+}
+
+main {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+  grid-template-rows: min-content;
+
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+
+  /* background-color: #01af75; */
+}
+
+main > section {
+  aspect-ratio: 4/3;
+}
+
+.outlet-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  background-color: #adadad;
+  border-style: outset;
+  border-width: 0.1em;
+  border-color: #000000;
+
+  box-shadow: 0 0.1em 0.1em;
+  
+  margin: 0.5em;
+}
+
+.inlet-box {
+  flex-grow: 1;
+
+  border-style: inset;
+  border-width: 0.1em;
+
+  background-color: #4d4d4d;
+  border-color: #000000;
+
+  box-shadow: inset 0 0.1em 0.1em;
+
+  margin: 0.5em;
+}
+
+footer {
+  flex: none;
+  /* height: min-content; */
+}
